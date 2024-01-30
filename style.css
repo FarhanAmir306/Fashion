@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@200;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    background-image: url('./img/banner2.jpg'); /* Replace 'your-image.jpg' with your actual image file name */
+    background-size: cover; /* Adjust as needed to control the background image size */
+    background-position: center;
+    /* Adjust as needed to control the background image position */
+}
+img {
+    width: 100%; /* Make the image take the full width of its container */
+    height: auto; /* Maintain the aspect ratio of the image */
+    display: block;
+    background-size: cover;
+    object-fit: cover; /* Remove any extra space below the image */
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the background color and opacity as needed */
+    padding: 10px; /* Adjust the padding as needed */
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px; /* Adjust the spacing between menu items as needed */
+}
+
+nav a {
+    text-decoration: none;
+    color: white; /* Adjust the text color as needed */
+    font-weight: bold;
+    font-size: 16px; /* Adjust the font size as needed */
+}
+
+/* .banner_title{
+    position: relative;
+    top:40%;
+    left:10%;
+} */
+.banner_title{
+    margin-top:300px;
+    margin-left:120px;
+}
+.title{
+    font-size:60px;
+}
+.special{
+    font-family: 'Dancing Script', cursive;
+}
+
+/* --------simple_card_section------  */
+
+.simple_card_section {
+    position: relative;
+    margin-top: 50px;
+}
+
+.simple_card {
+    position: relative;
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.simple_card img {
+    width: 100%; /* Make the image take the full width of its container */
+    height: 400px; /* Maintain the aspect ratio of the image */
+    display: block; /* Remove any extra space below the image */
+}
+
+.simple_card .simple_card_title {
+    position: absolute;
+    margin-top:100px;
+    transform: translate(-90px);
+    text-align: center;
+    color: #fff; /* Set the text color */
+    width: 80%; /* Adjust the width as needed */
+}
+
+.simple_card_title h3 {
+    margin-bottom: 5px;
+    font-weight:bold;
+    font-size:30px;
+    padding: 10px;
+    
+    
+}
+
+.simple_card_title h1 {
+   
+    font-size: 30px; /* Adjust the font size as needed */
+}
+/* ---simple section end----  */
+
+/* ---best card-----  */
+
+.best_seller_section{
+    margin-top: 100px;
+}
+.best_card {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Add transition for box-shadow and transform */
+
+    /* Set initial scale */
+    transform-origin: center;
+    transform: scale(1);
+}
+
+.best_card:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05); /* Adjust the scale factor based on your preference */
+}
+
+.best_card img {
+    width:100%;
+    height: 400px;
+    display: block; 
+    background-size: cover;
+    object-fit: cover;
+    
+}
+
+.best_card .bast_icon_section {
+    position: absolute;
+    margin-top: 100px;
+    transform: translateY(-50px) translateX(+40px);
+    text-align: center;
+    color: #fff; /* Set the text color */
+    width: 80%; /* Adjust the width as needed */
+}
+
+.best_card .bast_icon_section a {
+    display: block;
+    transition: transform 0.3s ease; /* Add transition for a smoother effect */
+}
+
+.best_card .bast_icon_section a:nth-child(1):hover {
+    transform: scale(1.4); /* Adjust the scale factor based on your preference for the first icon */
+}
+
+.best_card .bast_icon_section a:nth-child(2):hover {
+    transform: scale(1.4); /* Adjust the scale factor based on your preference for the second icon */
+}
+
+.best_card .bast_icon_section a:nth-child(3):hover {
+    transform: scale(1.4); /* Adjust the scale factor based on your preference for the third icon */
+}
+
+/* --- best card end ---  */
+
+/* --- second banner ---  */
+.second_banner{
+    background-image: linear-gradient(rgba(163, 5, 5, 0.5), rgba(143, 6, 6, 0.5)), url(./img/secondbg2.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    object-fit: cover;
+}
+
+.second_image_bottom img{
+    width:80%;
+    height: 700px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    /* object-fit: contain; */
+    
+}
+
+
+/* --------- grid imge ---  */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust the column width as needed */
+    gap:0px; /* Set gap to 0 to remove the spacing between items */
+}
+
+/* --- grid image end --  */
+
+/* ---- All produt --  */
+
+/* ---- All produt --  */
+
+/* ----- All brand name ---  */
+.all_teg {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.all_teg h1 {
+    font-size: 40px; /* Adjust the font size as needed */
+    font-weight: bold; /* Set font weight to bold */
+    margin: 0; /* Remove default margin to avoid extra spacing */
+    transition: color 0.3s ease;
+    padding:80px 0px; /* Add transition for smoother color change */
+}
+
+.all_teg h1:hover {
+    color: black;
+    transform: scale(1.4);
+    transition:  0.3s ease-in;
+}
+/* ----- All brand name end ---  */
+.review_banner{
+    background-image: linear-gradient(rgba(65, 62, 62, 0.5), rgba(51, 49, 49, 0.5)), url(./img/secondbg2.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    object-fit: cover;
+}

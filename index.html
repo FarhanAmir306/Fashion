@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fashion Cloth</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+
+    <header>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container">
+              <a class="navbar-brand me-5" href="#"><img src="./img/logo.png" alt="logo"></a>
+              <button class="navbar-toggler text-white bg-danger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse ms-5 ps-5 " id="navbarSupportedContent">
+                <ul class="navbar-nav  ms-5 ps-5 ">
+                  <li class="nav-item">
+                    <a class="nav-link active text-white fw-bold" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white fw-bold" href="#">About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Service
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white fw-bold" href="#">Contect Us</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="nav_icon_section d-flex gap-3">
+                <a class="mt-lg-2" href="#"><i class="fa-solid fa-magnifying-glass text-white fs-5 fw-bold"></i></a>
+                <a class="mt-lg-2" href="#"><i class="fa-regular fa-heart text-white fs-5 fw-bold"></i></a>
+                
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-user-secret text-white fs-5 fw-bold"></i>
+                        <i class="fa-solid fa-angle-down text-white fs-5 fw-bold"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                          <li><a class="dropdown-item" href="#">Register</a></li>
+                          <li><a class="dropdown-item" href="#">SignUp</a></li>
+                          
+                        </ul>
+                      </div>
+              
+              </div>
+
+
+              <!-- <div class="auth_button">
+                 <a class="btn btn-success  fw-bold" href="">profile</a>
+                 <a class="btn btn-success  fw-bold" href="">Logout</a>
+              </div> -->
+
+            </div>
+          </nav>
+
+        <div class="banner_title text-white">
+            <h5 class="title special ms-5">Special Offer</h5>
+            <h1  class="title">A world Of Luxury</h1>
+            <h1  class="title">Awaits You</h1>
+        </div>
+    </header>
+
+    <main>
+<!-- ------simple_card-------  -->
+        <div class="simple_card_section container-fluid h-75 mb-5 ">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="simple_card card">
+                        <img src="./img/simple4.jpg" alt="">
+                        <div class="simple_card_title">
+                            <h3>MEN'S CLOTHING</h3>
+                            <h1>Flat 40% Off</h1>
+                            <a class="btn btn-success mt-4" href="">Shop Now</a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="simple_card card">
+                        <img src="./img/simple8.jpg" alt="">
+                        <div class="simple_card_title">
+                            <h3>MEN'S CLOTHING</h3>
+                            <h1>Flat 40% Off</h1>
+                            <a class="btn btn-success mt-4" href="">Shop Now</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-4">
+                    <div class="simple_card card">
+                        <img src="./img/simple6.jpg" alt="">
+                        <div class="simple_card_title">
+                            <h3>MEN'S CLOTHING</h3>
+                            <h1>Flat 40% Off</h1>
+                            <a class="btn btn-success mt-4" href="">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+<!-- ------simple_card end-------  -->
+
+<!-- -------Best Seller -----  -->
+        <div class="best_seller_section container-fluid h-100 mb-5">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="card best_card">
+                        <img src="./img/best1.jpg" alt="">
+                        <div class="bast_icon_section d-flex align-items-end flex-column gap-3">
+                            <a class="text-white" href="#"><i class="fa-regular fa-heart fs-3 fw-bold"></i></a>
+                            <a class="text-white" href="#"><i class="fa-solid fa-cart-plus  fs-3 fw-bold"></i></a>
+                            <a class="text-white" href="#"><i class="fa-solid fa-eye  fs-3 fw-bold"></i></a>
+                        </div>
+                        <div class="best_title text-center p-3">
+                            <h5>Rating:5.0</h5>
+                            <h3>cloth for women</h3>
+                            <h5>$90</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2">
+                    <div class="card best_card">
+                        <img src="./img/best1.jpg" alt="">
+                        <div class="bast_icon_section d-flex align-items-end flex-column gap-3">
+                            <a class="text-white" href="#"><i class="fa-regular fa-heart fs-3 fw-bold"></i></a>
+                            <a class="text-white" href="#"><i class="fa-solid fa-cart-plus  fs-3 fw-bold"></i></a>
+                            <a class="text-white" href="#"><i class="fa-solid fa-eye  fs-3 fw-bold"></i></a>
+                        </div>
+                        <div class="best_title text-center p-3">
+                            <h5>Rating:5.0</h5>
+                            <h3>cloth for women</h3>
+                            <h5>$90</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2">
+                    <div class="card best_card">
+                        <img src="./img/best1.jpg" alt="">
+                        <div class="bast_icon_section d-flex align-items-end flex-column gap-3">
+                            <a class="text-white" href="#"><i class="fa-regular fa-heart fs-3 fw-bold"></i></a>
+                            <a class="text-white" href="#"><i class="fa-solid fa-cart-plus  fs-3 fw-bold"></i></a>
+                            <a class="text-white" href="#"><i class="fa-solid fa-eye  fs-3 fw-bold"></i></a>
+                        </div>
+                        <div class="best_title text-center p-3">
+                            <h5>Rating:5.0</h5>
+                            <h3>cloth for women</h3>
+                            <h5>$90</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="card best_card">
+                        <img src="./img/best1.jpg" alt="">
+                        <div class="bast_icon_section d-flex align-items-end flex-column gap-3">
+                            <a class="text-white" href="#"><i class="fa-regular fa-heart fs-3 fw-bold"></i></a>
+                            <a class="text-white" href="#"><i class="fa-solid fa-cart-plus  fs-3 fw-bold"></i></a>
+                            <a class="text-white" href="#"><i class="fa-solid fa-eye  fs-3 fw-bold"></i></a>
+                        </div>
+                        <div class="best_title text-center  p-3">
+                            <h5>Rating:5.0</h5>
+                            <h3>cloth for women</h3>
+                            <h5>$90</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="card best_card">
+                        <img src="./img/best1.jpg" alt="">
+                        <div class="bast_icon_section d-flex align-items-end flex-column gap-3">
+                            <a class="text-white" href="#"><i class="fa-regular fa-heart fs-3 fw-bold"></i></a>
+                            <a class="text-white" href="#"><i class="fa-solid fa-cart-plus  fs-3 fw-bold"></i></a>
+                            <a class="text-white" href="#"><i class="fa-solid fa-eye  fs-3 fw-bold"></i></a>
+                        </div>
+                        <div class="best_title text-center p-3">
+                            <h5>Rating:5.0</h5>
+                            <h3>cloth for women</h3>
+                            <h5>$90</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="card best_card">
+                        <img src="./img/best1.jpg" alt="">
+                        <div class="bast_icon_section d-flex align-items-end flex-column gap-3">
+                            <a class="text-white" href="#"><i class="fa-regular fa-heart fs-3 fw-bold"></i></a>
+                            <a class="text-white" href="#"><i class="fa-solid fa-cart-plus  fs-3 fw-bold"></i></a>
+                            <a class="text-white" href="#"><i class="fa-solid fa-eye  fs-3 fw-bold"></i></a>
+                        </div>
+                        <div class="best_title text-center p-3">
+                            <h5>Rating:5.0</h5>
+                            <h3>cloth for women</h3>
+                            <h5>$90</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- -------Best Seller end -----  -->
+
+<!-- ----- second banner --  -->
+    <div class="second_banner h-100 bg-danger mb-5">
+
+        <div class="second_banner_title text-white">
+            <div class="container d-flex justify-content-center align-items-center gap-3 p-5">
+                <h5>
+                    WHAT'S NEXT |<br>
+                        NEW IN
+                </h5>
+                <h1 class="fw-bold">
+                    Lookbook 2022 <br>
+                    Summer Dreams
+                </h1>
+            </div>
+            <div class="container text-center p-3">
+                <p class="mb-3">We're dreaming of summer, with it's bright colors and lovely weather. Summer dreaming...</p>
+                <a class="btn btn-success" href="">Discover Now</a>
+            </div>
+        </div>
+        <div class="second_image_bottom d-flex justify-content-center">
+            <img src="./img/second4.jpg" alt="">
+        </div>
+
+    </div>
+<!-- ----- second banner end --  -->
+
+<!-- ---- Trending In Footwear ---  -->
+<div class="best_seller_section container h-100 mb-5">
+    <div class="py-4">
+        <h1>Trending In Footwear</h1>
+        <p class="fw-bold">Preorder now to receive exclusive deals & gifts</p>
+    </div>
+    <div class="row ">
+        <div class="col-lg-3">
+            <div class="card best_card rounded-5">
+                <img src="./img/best1.jpg" alt="">
+                <div class="bast_icon_section d-flex align-items-end flex-column gap-3">
+                    <a class="text-white" href="#"><i class="fa-regular fa-heart fs-3 fw-bold"></i></a>
+                    <a class="text-white" href="#"><i class="fa-solid fa-cart-plus  fs-3 fw-bold"></i></a>
+                    <a class="text-white" href="#"><i class="fa-solid fa-eye  fs-3 fw-bold"></i></a>
+                </div>
+                <div class="best_title text-center p-3">
+                    <h5>Rating:5.0</h5>
+                    <h3>cloth for women</h3>
+                    <h5>$90</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3">
+            <div class="card best_card rounded-5">
+                <img src="./img/best1.jpg" alt="">
+                <div class="bast_icon_section d-flex align-items-end flex-column gap-3">
+                    <a class="text-white" href="#"><i class="fa-regular fa-heart fs-3 fw-bold"></i></a>
+                    <a class="text-white" href="#"><i class="fa-solid fa-cart-plus  fs-3 fw-bold"></i></a>
+                    <a class="text-white" href="#"><i class="fa-solid fa-eye  fs-3 fw-bold"></i></a>
+                </div>
+                <div class="best_title text-center p-3">
+                    <h5>Rating:5.0</h5>
+                    <h3>cloth for women</h3>
+                    <h5>$90</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3">
+            <div class="card best_card rounded-5">
+                <img src="./img/best1.jpg" alt="">
+                <div class="bast_icon_section d-flex align-items-end flex-column gap-3">
+                    <a class="text-white" href="#"><i class="fa-regular fa-heart fs-3 fw-bold"></i></a>
+                    <a class="text-white" href="#"><i class="fa-solid fa-cart-plus  fs-3 fw-bold"></i></a>
+                    <a class="text-white" href="#"><i class="fa-solid fa-eye  fs-3 fw-bold"></i></a>
+                </div>
+                <div class="best_title text-center p-3">
+                    <h5>Rating:5.0</h5>
+                    <h3>cloth for women</h3>
+                    <h5>$90</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="card best_card rounded-5">
+                <img src="./img/best1.jpg" alt="">
+                <div class="bast_icon_section d-flex align-items-end flex-column gap-3">
+                    <a class="text-white" href="#"><i class="fa-regular fa-heart fs-3 fw-bold"></i></a>
+                    <a class="text-white" href="#"><i class="fa-solid fa-cart-plus  fs-3 fw-bold"></i></a>
+                    <a class="text-white" href="#"><i class="fa-solid fa-eye  fs-3 fw-bold"></i></a>
+                </div>
+                <div class="best_title text-center  p-3">
+                    <h5>Rating:5.0</h5>
+                    <h3>cloth for women</h3>
+                    <h5>$90</h5>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+</div>
+<!-- ---- Trending In Footwear end ---  -->
+
+
+<!-- ---- Trending In Accessories  ---  -->
+<div class="best_seller_section container h-100 mb-5">
+    <div class="py-4">
+        <h1>Trending In Accessories</h1>
+        <p class="fw-bold">Preorder now to receive exclusive deals & gifts</p>
+    </div>
+    <div class="row ">
+        <div class="col-lg-3">
+            <div class="card best_card rounded-5">
+                <img src="./img/best1.jpg" alt="">
+                <div class="bast_icon_section d-flex align-items-end flex-column gap-3">
+                    <a class="text-white" href="#"><i class="fa-regular fa-heart fs-3 fw-bold"></i></a>
+                    <a class="text-white" href="#"><i class="fa-solid fa-cart-plus  fs-3 fw-bold"></i></a>
+                    <a class="text-white" href="#"><i class="fa-solid fa-eye  fs-3 fw-bold"></i></a>
+                </div>
+                <div class="best_title text-center p-3">
+                    <h5>Rating:5.0</h5>
+                    <h3>cloth for women</h3>
+                    <h5>$90</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3">
+            <div class="card best_card rounded-5">
+                <img src="./img/best1.jpg" alt="">
+                <div class="bast_icon_section d-flex align-items-end flex-column gap-3">
+                    <a class="text-white" href="#"><i class="fa-regular fa-heart fs-3 fw-bold"></i></a>
+                    <a class="text-white" href="#"><i class="fa-solid fa-cart-plus  fs-3 fw-bold"></i></a>
+                    <a class="text-white" href="#"><i class="fa-solid fa-eye  fs-3 fw-bold"></i></a>
+                </div>
+                <div class="best_title text-center p-3">
+                    <h5>Rating:5.0</h5>
+                    <h3>cloth for women</h3>
+                    <h5>$90</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3">
+            <div class="card best_card rounded-5">
+                <img src="./img/best1.jpg" alt="">
+                <div class="bast_icon_section d-flex align-items-end flex-column gap-3">
+                    <a class="text-white" href="#"><i class="fa-regular fa-heart fs-3 fw-bold"></i></a>
+                    <a class="text-white" href="#"><i class="fa-solid fa-cart-plus  fs-3 fw-bold"></i></a>
+                    <a class="text-white" href="#"><i class="fa-solid fa-eye  fs-3 fw-bold"></i></a>
+                </div>
+                <div class="best_title text-center p-3">
+                    <h5>Rating:5.0</h5>
+                    <h3>cloth for women</h3>
+                    <h5>$90</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="card best_card rounded-5">
+                <img src="./img/best1.jpg" alt="">
+                <div class="bast_icon_section d-flex align-items-end flex-column gap-3">
+                    <a class="text-white" href="#"><i class="fa-regular fa-heart fs-3 fw-bold"></i></a>
+                    <a class="text-white" href="#"><i class="fa-solid fa-cart-plus  fs-3 fw-bold"></i></a>
+                    <a class="text-white" href="#"><i class="fa-solid fa-eye  fs-3 fw-bold"></i></a>
+                </div>
+                <div class="best_title text-center  p-3">
+                    <h5>Rating:5.0</h5>
+                    <h3>cloth for women</h3>
+                    <h5>$90</h5>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+</div>
+<!-- ---- Trending In Accessories end ---  -->
+
+<!-- ------- grid image section -----  -->
+<div class="grid_image_section container-fluid h-75 mb-5  ">
+    <div class="simple_card_section ">
+        <div class=" grid-container">
+            <div class=" ">
+                <div class="simple_card card">
+                    <img src="./img/simple4.jpg" alt="">
+                    <div class="simple_card_title">
+                        <h3>MEN'S</h3>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="">
+                <div class="simple_card card">
+                    <img src="./img/simple8.jpg" alt="">
+                    <div class="simple_card_title">
+                        <h3>MEN'S</h3>
+                     
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <div class="">
+                <div class="simple_card card">
+                    <img src="./img/simple6.jpg" alt="">
+                    <div class="simple_card_title">
+                        <h3>MEN'S </h3>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="simple_card card">
+                    <img src="./img/simple6.jpg" alt="">
+                    <div class="simple_card_title">
+                        <h3>MEN'S</h3>
+                       
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="simple_card card">
+                    <img src="./img/simple6.jpg" alt="">
+                    <div class="simple_card_title">
+                        <h3>MEN'S</h3>
+                       
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="simple_card card">
+                    <img src="./img/simple6.jpg" alt="">
+                    <div class="simple_card_title">
+                        <h3>MEN'S</h3>
+                       
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="simple_card card">
+                    <img src="./img/simple6.jpg" alt="">
+                    <div class="simple_card_title">
+                        <h3>MEN'S</h3>
+                       
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="simple_card card">
+                    <img src="./img/simple6.jpg" alt="">
+                    <div class="simple_card_title">
+                        <h3>MEN'S</h3>
+                       
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="simple_card card">
+                    <img src="./img/simple6.jpg" alt="">
+                    <div class="simple_card_title">
+                        <h3>MEN'S</h3>
+                       
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="simple_card card">
+                    <img src="./img/simple6.jpg" alt="">
+                    <div class="simple_card_title">
+                        <h3>MEN'S</h3>
+                       
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- ------- grid image section End -----  -->
+
+
+<!-- ------- All Prodect -----  -->
+<div class="all_product_section h-100 mb-5 mt-5 d-flex flex-wrap justify-content-center align-items-center gap-5">
+    <div class="new_product">
+        <h1>New Product</h1>
+        <div class="card mb-3 border-0" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./img/simple5.jpg" class="img-fluid rounded-start h-100 " alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 border-0" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./img/simple5.jpg" class="img-fluid rounded-start h-100 " alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 border-0" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./img/simple5.jpg" class="img-fluid rounded-start h-100 " alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="special_product">
+        <h1>Special Product</h1>
+        <div class="card mb-3 border-0" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./img/simple6.jpg" class="img-fluid rounded-start h-100 " alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 border-0" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./img/simple6.jpg" class="img-fluid rounded-start h-100 " alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 border-0" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./img/simple6.jpg" class="img-fluid rounded-start h-100 " alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <div class="Featured_Product">
+        <h1>Featured Product</h1>
+        <div class="card mb-3 border-0" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./img/simple8.jpg" class="img-fluid rounded-start h-100 " alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 border-0" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./img/simple8.jpg" class="img-fluid rounded-start h-100 " alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 border-0" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./img/simple8.jpg" class="img-fluid rounded-start h-100 " alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+   
+</div>
+<!-- ------- All Prodect  End-----  -->
+
+<!-- ------all brand name ----  -->
+<div class="all_brand_name h-75 mb-5" style="background-color:#F5F5F5; color:#9e9797;">
+    <div class="all_teg container d-flex flex-wrap justify-content-between align-items-center">
+        <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Vona</h1>
+        <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Rose</h1>
+        <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Genith</h1>
+        <h1 style="font-family: 'Times New Roman', Times, serif;">Baper</h1>
+        <h1 style="font-family: Arial, Helvetica, sans-serif;">Verin</h1>
+        <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Monsca</h1>
+    </div>
+    <!-- <img src="./img/allbrandname.PNG" alt=""> -->
+</div>
+<!-- ------all brand name end ----  -->
+
+<!-- --- thired banner -------  -->
+<div class="third_banner_section h-100  container mb-5">
+    <div class="row gap-5   align-items-center">
+        <div class="col-lg-5">
+            <div>
+                <img class="rounded-3"  src="./img/3rd6.jpg " alt="">
+            </div>
+        </div>
+        <div class="col-lg-5">
+            <div class="third_banner_title">
+                <div class="d-flex gap-4 justify-content-start align-items-center py-5">
+                    <h4>SUMMER 2022 | <br>
+                        NEW IN</h4>
+                    <h1>
+                        Sweet And <br>
+                        Simple
+                    </h1>
+                </div>
+                <div>
+                    <h5>Take a look at our newest collection! We're keeping it sweet and simple this summer babes!</h5>
+                    <p>Fashion&Style is the global online retail destination for style inspiration and discovery, offering women and men a curated selection of ready-to-wear & accessories from over 1,000 established and emerging designers.</p>
+                </div>
+                <a class="btn btn-success" href="">Discover</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --- thired banner end -------  -->
+
+<div class="review_banner h-100">
+    <div class="container p-5">
+        <div class="py-5 text-white">
+            <h1>We Love Our Clients</h1>
+            <h5>We are very fortunate to have formed excellent <br>
+                partnerships with many of our clients.</h5>
+        </div>
+
+        <div>
+            <div class="rewiew_card container">
+                <div class="row ">
+                    <div class="col-lg-4 bg-white rounded-3">
+                        <div>
+                            <div class="d-flex gap-3 py-4">
+                                <img class="rounded-circle" src="./img/simple6.jpg" alt="" style="height:100px;width: 100px;">
+                                <div class="self_details">
+                                    <h3>Farhan Amir</h3>
+                                    <h5>Djano Davloper</h5>
+                                    <h5>5.0</h5>
+                                </div>
+                            </div>
+                            <div class="p-3">
+                                <h5>These are comfortable and they look great. I love that the sole is not super thick and oversized like other shoes. Much more subtle understated than other shoes.</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 bg-white rounded-3">
+                        <div>
+                            <div class="d-flex gap-3 py-4">
+                                <img class="rounded-circle" src="./img/simple6.jpg" alt="" style="height:100px;width: 100px;">
+                                <div class="self_details">
+                                    <h3>Farhan Amir</h3>
+                                    <h5>Djano Davloper</h5>
+                                    <h5>5.0</h5>
+                                </div>
+                            </div>
+                            <div class="p-3">
+                                <h5>These are comfortable and they look great. I love that the sole is not super thick and oversized like other shoes. Much more subtle understated than other shoes.</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 bg-white rounded-3">
+                        <div>
+                            <div class="d-flex gap-3 py-4">
+                                <img class="rounded-circle" src="./img/simple6.jpg" alt="" style="height:100px;width: 100px;">
+                                <div class="self_details">
+                                    <h3>Farhan Amir</h3>
+                                    <h5>Djano Davloper</h5>
+                                    <h5>5.0</h5>
+                                </div>
+                            </div>
+                            <div class="p-3">
+                                <h5>These are comfortable and they look great. I love that the sole is not super thick and oversized like other shoes. Much more subtle understated than other shoes.</h5>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+              
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="subscribe_section container h-100 mt-5">
+        <h1 class="text-center">Subscrible & Get <span class="text-danger">10%</span>Discount</h1>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label fw-bold">Email address</label>
+            <input type="email" class="form-control fw-bold " id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            
+        </div>
+  
+
+    </main>
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
