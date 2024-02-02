@@ -112,60 +112,57 @@ nav a {
 }
 /* ---simple section end----  */
 
-/* ---best card-----  */
+/* ---All Product card-----  */
 
-.best_seller_section{
+.show_all{
     margin-top: 100px;
+    margin-bottom: 100px;
 }
-.best_card {
+.slider-container {
+    position: relative;
+}
+
+.card_iteam {
     position: relative;
     overflow: hidden;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Add transition for box-shadow and transform */
-
-    /* Set initial scale */
-    transform-origin: center;
-    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px; /* Add border-radius for rounded corners */
 }
 
-.best_card:hover {
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
-    transform: scale(1.05); /* Adjust the scale factor based on your preference */
+.card_iteam:hover {
+    transform: scale(1.1); /* Adjust the scale factor as needed */
 }
 
-.best_card img {
-    width:100%;
-    height: 400px;
-    display: block; 
-    background-size: cover;
-    object-fit: cover;
-    
-}
-
-.best_card .bast_icon_section {
+.icon_section {
     position: absolute;
-    margin-top: 100px;
-    transform: translateY(-50px) translateX(+40px);
-    text-align: center;
-    color: #fff; /* Set the text color */
-    width: 80%; /* Adjust the width as needed */
+    top:50px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: black;
+    opacity: 0; /* Initially hide the icons */
 }
 
-.best_card .bast_icon_section a {
-    display: block;
-    transition: transform 0.3s ease; /* Add transition for a smoother effect */
+.card_iteam:hover .icon_section {
+    opacity: 1; 
+    /* Show the icons on hover */
 }
 
-.best_card .bast_icon_section a:nth-child(1):hover {
-    transform: scale(1.4); /* Adjust the scale factor based on your preference for the first icon */
+.icon_section i {
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    font-size: 40px; /* Adjust the font size as needed */
+    transition: font-size 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-.best_card .bast_icon_section a:nth-child(2):hover {
-    transform: scale(1.4); /* Adjust the scale factor based on your preference for the second icon */
-}
-
-.best_card .bast_icon_section a:nth-child(3):hover {
-    transform: scale(1.4); /* Adjust the scale factor based on your preference for the third icon */
+.icon_section i:hover {
+   
+    transform: scale(1.9); 
+    
 }
 
 /* --- best card end ---  */
@@ -232,3 +229,20 @@ nav a {
     background-position:center;
     object-fit: cover;
 }
+
+/* ---- service section */
+.service_section{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+/* ---- service end --  */
+
+/* ------ footer --------  */
+
+.footer_text_section{
+    margin-top: 200px;
+    margin-bottom: 80px;
+}
+
+/* ------ footer end --------  */
+
