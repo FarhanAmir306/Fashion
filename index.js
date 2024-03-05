@@ -1,5 +1,7 @@
 
 const loadAllProduct = () => {
+    // fetch('https://fashionstyle-qmo0.onrender.com/all_product/')
+    // fetch('http://127.0.0.1:8000/all_product/')
     fetch('https://fashionstyle-qmo0.onrender.com/all_product/')
       .then((response) => {
         // Handle the response, e.g., parse it as JSON
@@ -33,7 +35,7 @@ const loadAllProduct = () => {
                     <img src="${product.image}" class="card-img-top" loading="lazy" alt="...">
                     <div class="icon_section bg-black">
                     <a onclick=BuyProduct(${product.id}) class="btn"> <i class="fa-solid fa-cart-plus text-danger"></i> </a>
-                    <a  onclick=LoadDetails(${product.id}) class="btn"><i class="fa-solid fa-eye text-danger"></i></a>
+                    <a href="product_details.html?productId=${product.id}"   class="btn"><i class="fa-solid fa-eye text-danger"></i></a>
                     </div>
                 </div>
                 <div class="card-body d-flex flex-column flex-md-row">
@@ -54,37 +56,7 @@ const loadAllProduct = () => {
 
 };
 
-const LoadDetails = (productId) => {
-  fetch(`https://fashion-cloth.onrender.com/details/${productId}`)
-    .then((res) => res.json())
-    .then((data) => {
-      console.log(data.name);
 
-      const parent = document.querySelector('.Details_section');
-      const div = document.createElement('li');
-      div.innerHTML = `
-        <div class="card rounded-0 h-100">
-          <div class="row g-0 h-100">
-            <div class="col-md-6 col-xl-5 d-flex align-items-center p-2 p-md-3 p-xl-5">
-              <div class="card-body p-1 p-md-3 p-xl-5">
-                <p class="lead">Why use this slider</p>
-                <h2 class="card-title" style="color:#DF1E1E;">Swiffy Slider Benefits</h2>
-                <p class="card-text mt-3">Super fast lightweight slider and carousel with amazing touch support and user experience.</p>
-                <p>Super simple setup using just markup and few powerful configuration options</p>
-                <p class="card-text"><small class="text-muted">Remember to check out on mobile</small></p>
-              </div>
-            </div>
-            <div class="col-md-6 col-xl-7">
-              <img src="${data.image}" class="card-img d-none d-md-block" loading="lazy" style="height: 100%; object-fit: cover;" alt="...">
-            </div>
-          </div>
-        </div>
-      `;
-
-      // Append the created element to the parent container
-      parent.appendChild(div);
-    });
-};
 
 const BuyProduct=(id)=>{
 
@@ -97,8 +69,43 @@ const BuyProduct=(id)=>{
 
 }
 
+const loadCategories = () => {
+  const parent = document.querySelector('.button_section');
+  const productContainer = document.querySelector('.slider-container');
 
-  
+  fetch('https://fashionstyle-qmo0.onrender.com/categories')
+    .then((response) => response.json())
+    .then((data) => {
+      data.forEach((element) => {
+        const child = document.createElement('div');
+        child.innerHTML = `<button type="button" class="btn btn-primary" data-category-slug="${element.slug}">${element.name}</button>`;
+        parent.appendChild(child);
+
+        // Add click event listener to each button
+        child.querySelector('button').addEventListener('click', () => {
+          const categorySlug = element.slug;
+          console.log(element.slug);
+
+          // Clear existing products
+          productContainer.innerHTML = '';
+
+          fetch(`https://fashionstyle-qmo0.onrender.com/category/${categorySlug}/products/`)
+            .then((response) => response.json())
+            .then((products) => {
+              // Handle the products data as needed
+              showAllProduct(products);
+            })
+            .catch((error) => {
+              console.error('Error fetching products:', error);
+            });
+        });
+      });
+    });
+}
+
+// Call the function to load categories
+loadCategories();
+
 loadAllProduct()
 
 
